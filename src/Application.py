@@ -35,7 +35,7 @@ class Application(QApplication):
         font_size = (12*dpi_factor)/scaling_factor
         print("calculated font size",font_size)
 
-        return max(10,font_size)
+        return int(max(10,font_size)) #float font sizes dont work on windows ig
 
     def __init__(self):
         super().__init__(sys.argv)
