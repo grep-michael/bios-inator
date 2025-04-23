@@ -4,9 +4,11 @@ include/
 lib/
 lib64/
 __pycache__
-
+build
+dist
 
 #files
+*.spec
 *.pyc
 *.log
 *.env
