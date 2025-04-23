@@ -5,6 +5,5 @@ sys.path.insert(0, os.getcwd() + "/src/") #assuming you are running the script f
 from Application import Application
 
 
-
 app = Application()
 app.run()

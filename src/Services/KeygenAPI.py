@@ -6,7 +6,7 @@ except ModuleNotFoundError:
 
 class ApiClient():
     def __init__(self):
-        with open("bundle.js", 'r') as f:
+        with open("src/bundle.js", 'r') as f:
             js_code = f.read()
         
         self.js_ctx = execjs.compile(js_code)
