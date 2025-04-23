@@ -1,0 +1,13 @@
+#dirs
+bin/
+include/
+lib/
+lib64/
+__pycache__
+
+
+#files
+*.pyc
+*.log
+*.env
+!example.env
