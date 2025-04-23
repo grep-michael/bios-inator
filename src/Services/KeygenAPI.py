@@ -3,10 +3,10 @@ try:
     from src.Services.ResultModel import Result
 except ModuleNotFoundError:
     from Services.ResultModel import Result
-
+from resource_gather import get_resource
 class ApiClient():
     def __init__(self):
-        with open("src/bundle.js", 'r') as f:
+        with open(get_resource("src/bundle.js"), 'r') as f:
             js_code = f.read()
         
         self.js_ctx = execjs.compile(js_code)
